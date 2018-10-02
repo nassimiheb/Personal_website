@@ -1,0 +1,250 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+body{
+    height: 100%;  
+}
+ul{
+    padding: 15px;
+    list-style: none;
+}
+.head{
+    height: 80px;
+    background-color: #333;
+    border-bottom:#ddd solid 3px;
+}
+.img1, .img2, .img3{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+}
+.img1{
+    position: relative;
+    background-image: url("image1.jpeg");
+    min-height: 100%;   
+}
+.img2{
+    position: relative;
+    background-image: url("image2.jpeg");
+    min-height: 400px;
+}   
+.img3{
+    position: relative;
+    background-image: url("image3.jpeg");
+    min-height: 400px;
+}
+.sect1{
+    padding:  30px;
+    background-color: #f4f4f4;
+    font-family:  tahoma ;
+    align-content: center;
+    text-align: center;
+    color: #373737;
+}
+.sect2{
+    padding:  30px;
+    background-color: #333;
+    font-family:  tahoma ;
+    align-content:  center;
+    text-align: center;
+    color: #ddd;
+}
+span{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    opacity: 1;
+    text-transform: uppercase;
+}
+footer{
+    border-top: double;
+    background-color: #333;
+    height: 50Px;
+    text-align: center;
+}
+ul{
+    padding: 15px;
+    list-style: none;
+}
+.lis li{
+    position: relative;
+    float: left;
+    height: 40px;
+    font-size: 25px;
+    opacity: .8;
+    text-align: center;
+    background-color: #333;
+    color:#b82601;
+    animation-name: list;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes list{
+    0%{ top: -1000px;
+    }
+    100%{ top: 0px }
+}
+.lis li{
+    margin: 10px 5px;
+    width: 19%;
+}
+ul li a {
+    text-decoration: none;
+    color:  #fff;
+    font-weight: bolder;
+    display: block;
+}
+ul li a:hover{
+    background-color: #c0b283;
+}
+.box{
+    float: left;
+    margin:80px 0px 0px 70px;
+    width:25%;
+    text-align:  center;
+    color:white;
+    opacity: 0.9;
+}
+.icon:hover{
+    position:relative;
+    width:150px;
+    left: 25%;
+    height:auto;
+    display:block;
+    opacity: 1;
+}
+body,#slider,.wrap,.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide1 {
+  background-image: url("image7.jpeg");}
+.slide2 {
+  background-image: url("image5.jpeg");}
+.slide3 {
+  background-image: url("image6.jpeg");}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  text-align: center;
+}
+
+.descrip {
+    box-sizing: border-box;
+     box-shadow: 0 10px 10px #333;
+    border-radius: 5%;
+    padding: 10px;
+    background: #333 ;
+    opacity: 0.6;
+    position: relative;
+    margin :50% 0 0 30%;
+    width: 40%;
+    height: 20%;
+    font-size: 16px;
+    color: #fff;
+    animation-name: box;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes box{
+    0%{ left: -1000px;}
+    100%{ left: 0px;}
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+.n-container {
+    -webkit-animation: fadeInAndUp 0.7s ease-out forwards;
+    animation: fadeInAndUp 0.7s ease-out forwards;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 1;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    width: 100%;
+    height: 83vh;
+}
+
+
+#description-container {
+    border: solid #fff 2px;
+    box-shadow: 0 20px 10px #333;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left: 40px;
+    max-width: 1070px;
+    position: relative;
+    z-index: 1;
+    color: #00fdff;
+    width: 50%;
+    background-color: #333;
+    opacity: 0.9;
+    color: white;
+}
+#seemore:hover,#seemore:active,#seemore:visited,#seemore{text-decoration: none;color:#b32400;}
+#seemore{ 
+    position: fixed;
+    right: -30%;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#description-container{
+    animation-name: fAro;
+    animation-duration: 2s;
+}
+@keyframes fAro{
+    0%{ transform: rotate(0)}
+    30%{ transform: rotate(30%)}
+    100%{ transform: rotate(90%)}
+}

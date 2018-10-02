@@ -1,0 +1,87 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+body{
+    height: 100%;  
+}
+ul{
+    padding: 15px;
+    list-style: none;
+}
+.head{
+    height: 80px;
+    background-color: #333;
+    border-bottom:#ddd solid 3px;
+    position: fixed;
+    width: 100%;
+}
+.img4{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+}
+.img4{
+    position: relative;
+    background-image: url("img4.jpeg");
+    min-height: 100%;   
+}ul{
+    padding: 15px;
+    list-style: none;
+}
+.lis li{
+    position: relative;
+    float: left;
+    height: 40px;
+    font-size: 25px;
+    opacity: .8;
+    text-align: center;
+    background-color: #333;
+    color:#b82601;
+    animation-name: list;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes list{
+    0%{ top: -1000px}
+    100%{ top: 0px }
+}
+.lis li{
+    margin: 10px 5px;
+    width: 19%;
+}
+ul li a {
+    text-decoration: none;
+    color:  #fff;
+    font-weight: bolder;
+    display: block;
+}
+ul li a:hover{
+    background-color: #c0b283;
+}
+.container{ 
+    
+    text-align: center;
+    padding: 50px;
+    
+}
+.imgcont{
+    width: 500px;
+    overflow: hidden;
+    border: solid 2px #fff;
+    margin-left: 30%;
+}
+img{width: 100%;}
+img:hover{
+    
+    animation-name: img;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes img{
+    0%{width: 100%;}
+    100%{width: 107%;}
+}

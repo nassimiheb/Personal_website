@@ -1,0 +1,256 @@
+  .loginbox{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50% ,-50%);
+  box-sizing: border-box;
+  width: 700px;
+  height: 500px;
+  background: transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  transition: 0.5s;
+  
+}
+.loginbox:hover{
+  box-shadow:  0 10px 20px rgba(0,0,0,0);
+  background: white; 
+}
+.glass{
+  width:100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  transition: 0.5s; 
+}
+.glass:hover{
+  transform:translate(20px,20px);
+  box-shadow:  0 10px 20px rgba(0,0,0,.5);
+}
+
+.loginbox input {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.loginbox input[type="text"],
+.loginbox input[type=""],textarea{
+  
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 40px;
+  color: #262626;
+  background: transparent;
+  font-size: 16px;
+  padding-left:20px;
+  box-sizing:border-box;
+}
+.loginbox input[type="submit"]{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background: #ed292a;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+.loginbox {position: relative}
+
+  body { margin: 0; padding: 0; height: 100vh; background-color: #111; }
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font: 300 2.6rem 'Lato', sans-serif;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+#contact {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-header {
+  color: #eee;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-icons-list {
+  position: relative;
+  list-style-type: none;
+  text-align: center;
+  font-size: 30px; 
+}
+
+
+.contact-icons-list li {
+  position: relative; 
+  left: -13px;
+  display: inline-block;
+  margin: 20px 15px;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+  
+}
+.contact-icons-list li:after {
+  content: '';
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  opacity: 0;
+  box-shadow: 0 0 0 2px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.contact-icons-list li:hover {
+  background-color: #fff;
+}
+
+.contact-icons-list li:hover:after {
+  opacity: 1; 
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.3, 0.7, 0.1, 1.6);
+}
+
+.contact-icons-list li:hover .icon-font {
+  color: #111;
+}
+
+
+.icon-font {
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top:-15px;
+  left:-40px;
+  z-index: 1;
+  border-radius: 50%;
+}
+*{ 
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+body{
+    height: 100%;
+    
+    
+}
+.head{
+    height: 80px;
+    background-color: #333;
+    border-bottom:#ddd solid 3px;
+}
+.img1, .img2, .img3{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+}
+.img1{
+    position: relative;
+    background-image: url("image1.jpeg");
+    min-height: 100%;   
+}
+.img2{
+    position: relative;
+    background-image: url("image2.jpeg");
+    min-height: 400px;
+}   
+.img3{
+    position: relative;
+    background-image: url("image3.jpeg");
+    min-height: 400px;
+}
+.sect1{
+    padding:  30px;
+    background-color: #f4f4f4;
+    font-family:  tahoma ;
+    align-content: center;
+    text-align: center;
+    color: #373737;
+}
+.sect2{
+    padding:  30px;
+    background-color: #333;
+    font-family:  tahoma ;
+    align-content:  center;
+    text-align: center;
+    color: #ddd;
+}
+span{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    opacity: 1;
+    text-transform: uppercase;
+}
+footer{
+    border-top: double;
+    background-color: #333;
+    height: 50Px;
+    text-align: center;
+}
+ul{
+    padding: 15px;
+    list-style: none;
+}
+.lis li{
+    position: relative;
+    float: left;
+    height: 40px;
+    font-size: 25px;
+    opacity: .8;
+    text-align: center;
+    background-color: #333;
+    color:#b82601;
+    animation-name: list;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes list{
+    0%{ top: -1000px}
+    100%{ top: 0px }
+}
+.lis li{
+    margin: 10px 5px;
+    width: 19%;
+}
+ul li a {
+    text-decoration: none;
+    color:  #fff;
+    font-weight: bolder;
+    display: block;
+}
+ul li a:hover{
+    background-color: #c0b283;
+}
